@@ -1,7 +1,7 @@
 diff --git a/Osu.Game/OsuGameBase.cs b/Osu.Game/OsuGameBase.cs
 index 20b4138..4ea0e3f 100644
---- a/Osu.Game/OsuGameBase.cs
-+++ b/Osu.Game/OsuGameBase.cs
+--- a/osu.Game/OsuGameBase.cs
++++ b/osu.Game/OsuGameBase.cs
 @@ -253,17 +253,7 @@ namespace osu.Game
          [BackgroundDependencyLoader]
          private void load(ReadableKeyCombinationProvider keyCombinationProvider, FrameworkConfigManager frameworkConfig)
