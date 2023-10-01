@@ -1,11 +1,11 @@
-diff --git a/osu.Game/OsuGameBase.cs b/osu.Game/OsuGameBase.cs
-index 98f60d52d..a27ce47ca 100644
---- a/osu.Game/OsuGameBase.cs
-+++ b/osu.Game/OsuGameBase.cs
-@@ -253,16 +253,6 @@
-        [BackgroundDependencyLoader]
-        private void load(ReadableKeyCombinationProvider keyCombinationProvider, FrameworkConfigManager frameworkConfig)
-        {
+diff --git a/Osu.Game/OsuGameBase.cs b/Osu.Game/OsuGameBase.cs
+index 20b4138..4ea0e3f 100644
+--- a/Osu.Game/OsuGameBase.cs
++++ b/Osu.Game/OsuGameBase.cs
+@@ -253,17 +253,7 @@ namespace osu.Game
+         [BackgroundDependencyLoader]
+         private void load(ReadableKeyCombinationProvider keyCombinationProvider, FrameworkConfigManager frameworkConfig)
+         {
 -            try
 -            {
 -                using (var str = File.OpenRead(typeof(OsuGameBase).Assembly.Location))
@@ -18,5 +18,6 @@ index 98f60d52d..a27ce47ca 100644
 -                VersionHash = $"{Version}-{RuntimeInfo.OS}".ComputeMD5Hash();
 -            }
 +            VersionHash = "d2e47d30b002c57273ace464cee02dd2";
-
-            Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));
+ 
+             Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));
+ 
