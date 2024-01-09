@@ -1,4 +1,3 @@
 ";
  
              Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));
- 
