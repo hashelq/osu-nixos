@@ -9,5 +9,4 @@ url=$(curl -sL https://api.github.com/repos/ppy/osu/releases/latest | ./jq '.ass
 curl -sL $url > osu.AppImage
 chmod +x ./osu.AppImage
 ./osu.AppImage --appimage-extract
-ls
 md5sum bin/osu.Game.dll
