@@ -1,5 +1,6 @@
-name: "Update latest version to the release version."
+name: "Update to the release"
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'release-versions/*'
