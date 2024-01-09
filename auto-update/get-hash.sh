@@ -10,6 +10,4 @@ url=$(curl -sL https://api.github.com/repos/ppy/osu/releases/latest | ./jq '.ass
 curl -sL $url > osu.AppImage
 chmod +x ./osu.AppImage
 ./osu.AppImage --appimage-extract
-echo "DEBUG?"
-ls .
-md5sum bin/osu.Game.dll
+md5sum squashfs-root/usr/bin/osu.Game.dll
