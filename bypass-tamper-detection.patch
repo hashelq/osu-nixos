@@ -20,4 +20,3 @@ index 20b4138..4ea0e3f 100644
 +            VersionHash = "2965f4256cbd6d1f760a542e16960adf";
  
              Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));
- 
