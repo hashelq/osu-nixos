@@ -1,0 +1,20 @@
+diff --git a/Osu.Game/OsuGameBase.cs b/Osu.Game/OsuGameBase.cs
+index 20b4138..4ea0e3f 100644
+--- a/osu.Game/OsuGameBase.cs
++++ b/osu.Game/OsuGameBase.cs
+@@ -253,17 +253,7 @@ namespace osu.Game
+         [BackgroundDependencyLoader]
+         private void load(ReadableKeyCombinationProvider keyCombinationProvider, FrameworkConfigManager frameworkConfig)
+         {
+-            try
+-            {
+-                using (var str = File.OpenRead(typeof(OsuGameBase).Assembly.Location))
+-                    VersionHash = str.ComputeMD5Hash();
+-            }
+-            catch
+-            {
+-                // special case for android builds, which can't read DLLs from a packed apk.
+-                // should eventually be handled in a better way.
+-                VersionHash = $"{Version}-{RuntimeInfo.OS}".ComputeMD5Hash();
+-            }
++            VersionHash = "
