@@ -10,4 +10,5 @@ url=$(curl -sL https://api.github.com/repos/ppy/osu/releases/latest | ./jq '.ass
 curl -sL $url > osu.AppImage
 chmod +x ./osu.AppImage
 ./osu.AppImage --appimage-extract > /dev/null 1>/dev/null 2>/dev/null 3>/dev/null
-md5sum squashfs-root/usr/bin/osu.Game.dll
+md5=($(md5sum squashfs-root/usr/bin/osu.Game.dll))
+echo $md5
