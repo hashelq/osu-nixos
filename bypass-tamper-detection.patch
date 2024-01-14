@@ -17,6 +17,6 @@ index 20b4138..4ea0e3f 100644
 -                // should eventually be handled in a better way.
 -                VersionHash = $"{Version}-{RuntimeInfo.OS}".ComputeMD5Hash();
 -            }
-+            VersionHash = "2965f4256cbd6d1f760a542e16960adf";
++            VersionHash = "1f7de35440ffd198f319b3e1d9a403e1";
  
              Resources.AddStore(new DllResourceStore(OsuResources.ResourceAssembly));
